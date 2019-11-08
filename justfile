@@ -26,9 +26,9 @@ rm:
 git-init:
     hub init
     hub create
-    echo "./gradle" > .gitignore
-    echo "./vscode" >> .gitignore
-    echo "./pycache" >> .gitignore
+    echo ".gradle/" > .gitignore
+    echo ".vscode/" >> .gitignore
+    echo "__pycache__/" >> .gitignore
 
 #No Soltion for github auth currently
 #Path: ~/.ssh/github_rsa
