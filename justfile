@@ -25,23 +25,11 @@ rm:
 
 git-init:
     hub init
+    hub create
     echo "./gradle" > .gitignore
     echo "./vscode" >> .gitignore
+    echo "./pycache" >> .gitignore
 
-git-init2:
-    hub pull origin master
-
-git-add:
-    hub add .gitignore
-    hub add *
-
-git-push:
-    hub push
-
-git-clone:
-    hub clone git@github.com:alantsui4/kotlinSpring.git ./
-git-pull:
-    hub pull git@github.com:alantsui4/kotlinSpring.git
 #No Soltion for github auth currently
 #Path: ~/.ssh/github_rsa
 git-auth:
