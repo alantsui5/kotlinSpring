@@ -2,7 +2,7 @@ run: build execute rm
 
 Os := os()
 
-checker:
+installer:
     #!/usr/bin/env python3
     import sys
     import os
@@ -30,6 +30,11 @@ git-init:
     echo ".vscode/" >> .gitignore
     echo "__pycache__/" >> .gitignore
 
+git-reload:
+    git rm -r --cached .
+    git add .
+    git commit -m "commit reload"
+    git push
 #No Soltion for github auth currently
 #Path: ~/.ssh/github_rsa
 git-auth:
